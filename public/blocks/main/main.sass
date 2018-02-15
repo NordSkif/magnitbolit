@@ -1,0 +1,70 @@
+.swap-touch-select
+    background-image: url('../img/objects/touch.png')
+    width: 68px
+    height: 47px
+    display: inline-block
+    z-index: 1
+    opacity: 1
+    position: absolute
+    left: 1360px
+    top: 45px
+    align-items: center
+
+.main.wrapper
+    background-image: url("../img/bgs/main.jpg") !important
+
+.main
+    .link
+        font-family: "Geometria"
+        font-size: 24px
+        font-weight: bold
+        line-height: 1.42
+        color: #FFFFFF
+        position: relative
+        cursor: pointer
+        margin-top: 50px
+
+.main
+
+    .title
+        margin: 70px 0 -30px 0
+        font-size: 30px
+        color: #fff
+        font-family: $font-geometria
+        font-weight: 700
+        min-height: 30px
+
+
+    .subtitle
+        @include widthFix(308px)
+        margin-top: 84px
+        margin-bottom: 60px
+        font-weight: 500
+        font-size: 22px
+
+    .text
+        width: 455px
+        margin: -40px 0 0px 0
+        font-weight: 300
+        color: #fff
+        font-family: $font-geometria
+
+    .text_white
+        font-weight: 400
+        font-size: 16px
+        font-family: $font-roboto
+
+    .link
+
+        &:after
+            top: 60px
+            @extend .icon-arrow-right
+            color: #fff
+            content: ''
+            position: absolute
+            transform: translate(0, -50%)
+
+        .subtitle
+            margin-top: 20px
+            margin-bottom: 0
+

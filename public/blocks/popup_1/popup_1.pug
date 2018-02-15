@@ -1,0 +1,34 @@
+.popup1.popup.swiper-no-swiping(
+	v-bind:class="{ 'popup_active': this.modals.popup1.active}"
+)
+	.container
+		.column.column__1x
+			.subtitle Заголовок попапа
+
+			.text Из-за больших размеров транспортировать &laquo;Буран&raquo; на космодром обычным наземным транспортом очень трудно. Для его перевозки используется специально модифицированный самолет ВМ-Т (при этом с &laquo;Бурана&raquo; снимается киль и масса доводится до 50 т) или транспортный самолет Ан-225.
+
+			.popup1__photo(
+				data-swiper-parallax="-500"
+			)
+				img(
+					src="img/objects/popup1-ph.png"
+					v-on:click.self='photoOpen($event)'
+				)
+			.text.text__dark-grey Уникальный самолет ВМ-Т &laquo;Атлант&raquo; для перевозки Бурана
+
+		.column.column__2x
+			.touch__btn Коснитесь схемы
+			.popup1__scheme
+
+		.column.column__1x
+			.big_title.big_title-modified1 73
+			.text.text__dark-grey.text__dark-grey_modified Вставная кабина объемом, куб. м.
+			.big_title 35,4
+			.text.text__dark-grey.text__dark-grey_modified Длина, м.
+			.big_title 16,5
+			.text.text__dark-grey.text__dark-grey_modified Высота, м.
+			.big_title 24
+			.text.text__dark-grey.text__dark-grey_modified Размах крыла около, м
+		.popup-top-arrow(
+			v-on:click="closeModal('popup1', false)"
+		)

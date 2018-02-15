@@ -1,0 +1,27 @@
+.popup2.popup.swiper-no-swiping(
+	v-bind:class="{ 'popup_active': this.modals.popup2.active }"
+)
+	.container
+		.column.column__4x
+			.row.row__2x.row_modified
+				.subtitle Заголовок попапа
+				.super_big_title 15 ноября 1988 года
+
+			.row.row__2x.row_modification
+				.column.column__1x
+					.text.text__desk Первый полет «Бурана»
+					.text Свой первый и единственный полет «Буран» совершил 15 ноября 1988 года. Корабль был выведен на орбиту, совершил два витка вокруг Земли, а затем в автоматическом режиме совершил успешную посадку на космодроме Байконур.
+				.column.column__1x
+					.text.text__modified Второй полет «Бурана» планировался на 1990 год и должен был состояться с космонавтами на борту. Он был отложен на 1992 год, но не состоялся.
+				.column.column__1x
+					.text.text__modified В 1993 году, во время политического и экономического кризиса, у космической отрасли не было средств для запуска «Бурана», и программу закрыли.
+				.column.column__1x
+					.help-link.help-link__right(
+						v-on:click="showModal('sidebar2')"
+					) Подробнее
+					.video-link(
+						v-on:click="showModal('popupVideo1')"
+					) Смотреть анимацию полета «Бурана»
+		.popup-top-arrow(
+		v-on:click="closeModal('popup2', false)"
+		)

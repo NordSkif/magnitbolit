@@ -1,0 +1,50 @@
+.swap-touch-select
+.main.wrapper
+    .container
+
+        .column.column__1x
+            .row.row__1x
+                .title Космическая погода
+
+            .row.row__1x
+                .text В космосе, как и на Земле, бывают ветер, ливни и даже бури. Только ветер — солнечный, ливни — из заряженных частиц, а бури — магнитные. Космическая «погода» зависит от явлений, происходящих на Солнце, в верхней атмосфере Земли и межпланетной среде.Межпланетная среда — это вещество и поля, заполняющие пространство внутри Солнечной системы.
+
+            .row.row__1x
+                .link.link__arrow-right(
+                data-swiper-parallax="-300"
+                v-on:click="goToSlide(1, 100)"
+                )
+                    .text_white .01
+                    .subtitle Основные понятия
+            .row.row__1x
+                .link.link__arrow-right(
+                data-swiper-parallax="-300"
+                v-on:click="goToSlide(2, 100)"
+                )
+                    .text_white .02
+                    .subtitle Какой бывает космическая погода
+
+        .column.column__1x
+
+
+        .column.column__1x
+            .row.row__1x
+            .row.row__1x
+            .row.row__1x
+                .link.link__arrow-right(
+                data-swiper-parallax="-300"
+                v-on:click="goToSlide(3, 100)"
+                )
+                    .text_white .03
+                    .subtitle Как и на что влияет космическая погода
+
+            .row.row__1x
+                .link.link__arrow-right(
+                data-swiper-parallax="-300"
+                v-on:click="goToSlide(4, 100)"
+                )
+                    .text_white .04
+                    .subtitle Фотогалерея
+
+        .column.column__1x
+
